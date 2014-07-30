@@ -1,6 +1,6 @@
 Basic
 =====
-A basic yii app with better directory structrue and stylus support
+A basic yii app with better directory structrue, html-boilerplate and stylus support
 
 
 == License
