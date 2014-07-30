@@ -1,0 +1,6 @@
+protected/runtime
+assets/*
+!assets/css
+!assets/img
+!assets/js
+!assets/fonts
