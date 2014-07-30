@@ -9,5 +9,9 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 // specify how many levels of call stack should be shown in each log message
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
+// custom helpers
+$helpers=dirname(__FILE__).'/protected/components/helpers.php';
+require_once($helpers);
+
 require_once($yii);
 Yii::createWebApplication($config)->run();

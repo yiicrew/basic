@@ -13,23 +13,17 @@
 	<!-- ICONS -->
 
 	<!-- STYLES -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/css/print.css" media="print" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/css/form.css" />
-
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?= asset('css/main.css') ?>">
 
 	<!-- SCRIPTS -->
-	<script src="js/vendor/modernizr-2.8.0.min.js"></script>
+	<script src="<?= asset('js/vendor/modernizr-2.8.0.min.js') ?>"></script>
 
 </head>
 <body>
 
-    	<!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+	<!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 <div class="container" id="page">
 
@@ -65,12 +59,13 @@
 		Copyright &copy; <?php echo date('Y'); ?> by My Company. All Rights Reserved.
 	</div><!-- footer -->
 
-</div><!-- page -->
+</div>
+<!-- container -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script>window.jQuery || document.write('<script src="<?= asset('js/vendor/jquery-1.11.1.min.js') ?>"><\/script>')</script>
+	<script src="<?= asset('js/plugins.js') ?>"></script>
+	<script src="<?= asset('js/main.js') ?>"></script>
 
 	<!-- Google Analytics -->
 	<script>
