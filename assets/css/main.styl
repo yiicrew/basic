@@ -15,20 +15,7 @@ body
 	margin: 0
 	padding: 0
 	border-top: 3px solid #C9E0ED
-
-#content
-    padding: 20px
-
-#sidebar
-	padding: 20px 20px 20px 0
-
-#footer
-	padding: 10px
-	margin: 10px 20px
-	font-size: 0.8em
-	text-align: center
-	border-top: 1px solid #C9E0ED
-
+	
 #logo
 	padding: 10px 20px
 	font-size: 200%
@@ -36,77 +23,80 @@ body
 #mainmenu
 	background: #C9E0ED
 
-#mainmenu ul
-	padding:6px 20px 5px 20px
-	margin:0px
+	ul
+		padding:6px 20px 5px 20px
+		margin:0px
 
-#mainmenu ul li
-	display: inline
+	ul li
+		display: inline
 
-#mainmenu ul li a
-	color:#ffffff
-	background-color:transparent
-	font-size:12px
-	font-weight:bold
-	text-decoration:none
-	padding:5px 8px
+	ul li a
+		color:#ffffff
+		background-color: transparent
+		font-size: 12px
+		font-weight: bold
+		text-decoration: none
+		padding: 5px 8px
 
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-	color: #6399cd
-	background-color:#EFF4FA
-	text-decoration:none
+	ul li a:hover, ul li.active a
+		color: #6399cd
+		background-color: #EFF4FA
+		text-decoration: none
 
-div.flash-error, div.flash-notice, div.flash-success
-	padding:.8em
-	margin-bottom:1em
-	border:2px solid #ddd
+#content
+	padding: 20px
 
-div.flash-error
+#sidebar
+	padding: 20px
+
+#footer
+	padding: 10px
+	margin: 10px 0
+	text-align: center
+	border-top: 1px solid #C9E0ED
+
+.flash-error, 	.flash-notice, 	.flash-success
+		padding:.8em
+		margin-bottom:1em
+		border:2px solid #ddd
+
+.flash-error
 	background:#FBE3E4
 	color:#8a1f11
 	border-color:#FBC2C4
 
-div.flash-notice
+.flash-notice
 	background:#FFF6BF
 	color:#514721
 	border-color:#FFD324
 
-div.flash-success
+.flash-success
 	background:#E6EFC2
 	color:#264409
 	border-color:#C6D880
 
-div.flash-error a
+.flash-error a
 	color:#8a1f11
 
-div.flash-notice a
+.flash-notice a
 	color:#514721
 
-div.flash-success a
+.flash-success a
 	color:#264409
 
-div.form .rememberMe label
+.form .rememberMe label
 	display: inline
 
-div.view
-	padding: 10px
-	margin: 10px 0
-	border: 1px solid #C9E0ED
+.breadcrumbs
+	padding: 5px 0
 
-div.breadcrumbs
-	font-size: 0.9em
-	padding: 5px 20px
-
-div.breadcrumbs span
+.breadcrumbs span
 	font-weight: bold
 
-div.search-form
+.search-form
 	padding: 10px
 	margin: 10px 0
 	background: #eee
-
-.portlet
-
 
 .portlet-decoration
 	padding: 3px 8px
@@ -141,19 +131,25 @@ div.search-form
 	margin: 0
 	padding: 0
 
-.operations li
-	padding-bottom: 2px
+	li
+		padding-bottom: 2px
 
-.operations li a
-	font: bold 12px Arial
-	color: #0066A4
-	display: block
-	padding: 2px 0 2px 8px
-	line-height: 15px
-	text-decoration: none
+	li a
+		font: bold 12px Arial
+		color: #0066A4
+		display: block
+		padding: 2px 0 2px 8px
+		line-height: 15px
+		text-decoration: none
 
-.operations li a:visited
-	color: #0066A4
+	li a:visited
+		color: #0066A4
 
-.operations li a:hover
-	background: #80CFFF
+	li a:hover
+		background: #80CFFF
+
+.list-view
+	.view
+		padding: 10px
+		margin: 10px 0
+		border: 1px solid #C9E0ED
