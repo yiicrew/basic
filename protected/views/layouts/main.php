@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?= e($this->pageTitle) ?></title>
 
 	<!-- META -->
 	<meta name="keywords" content="">
@@ -29,7 +29,7 @@
 
 	<div id="header">
 		<div id="logo">
-			<?php echo CHtml::encode(Yii::app()->name); ?>
+			<?= e(Yii::app()->name) ?>
 		</div>
 	</div><!-- header -->
 
@@ -51,12 +51,12 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif ?>
 
-	<?php echo $content; ?>
+	<?= $content ?>
 
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company. All Rights Reserved.
+		Copyright &copy; <?= date('Y') ?> by My Company. All Rights Reserved.
 	</div><!-- footer -->
 
 </div>
