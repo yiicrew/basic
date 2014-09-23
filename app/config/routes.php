@@ -6,6 +6,9 @@ return [
 
 		'login' => 'user/login',
 		'logout' => 'user/logout',
+
+		'home' => 'site/index',
+		'page/<view:[\w-]+>' => 'site/page',
 		
 		// default route
 		'<controller:\w+>/<id:\d+>'=>'<controller>/view',
