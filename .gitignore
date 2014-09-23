@@ -1,4 +1,4 @@
-protected/runtime
+app/runtime
 assets/*
 
 !assets/css
