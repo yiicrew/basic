@@ -26,6 +26,11 @@ function image($asset='', $title='', $opts=[])
 	return CHtml::image(asset($asset), $title, $opts);
 }
 
+function img($asset='', $title='', $opts=[])
+{
+	return CHtml::image(asset($asset), $title, $opts);
+}
+
 function upload_image($asset='', $title='', $opts=[])
 {
 	return CHtml::image(params('cdn').$asset, $title, $opts);
@@ -53,6 +58,12 @@ function url($url='', $params=[])
 	return Yii::app()->createUrl($url, $params);
 }
 
+// shortcut to CController::createUrl
+function route($url='', $params=[])
+{
+	return Yii::app()->createUrl($url, $params);
+}
+
 function dd($value='')
 {
 	printf("<pre>%s</pre>", var_dump($value));
@@ -60,6 +71,11 @@ function dd($value='')
 }
 
 function link_to($link="link name", $url="#", $options=[])
+{
+	return CHtml::link($link, $url, $options);
+}
+
+function a($link="link name", $url="#", $options=[])
 {
 	return CHtml::link($link, $url, $options);
 }
@@ -73,7 +89,7 @@ function f($value='', $limit=1, $offset=0)
 
 function script($file, $core=false)
 {
-    if ($core)
+    if (isset($core))
         return Yii::app()->clientScript->registerCoreScript($file);
     return Yii::app()->clientScript->registerScriptFile(asset($file));
 }
